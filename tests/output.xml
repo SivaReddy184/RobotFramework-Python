@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.5 on win32)" generated="2026-01-07T08:18:30.397006" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\ASUS\Desktop\Projects\RobotFramework\tests">
+<suite id="s1-s1" name="Test" source="C:\Users\ASUS\Desktop\Projects\RobotFramework\tests\test.robot">
+<test id="s1-s1-t1" name="Validate the user login with role selection" line="47">
+<kw name="open the browser with the Mortgage payment url" owner="global" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:31.231975" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2026-01-07T08:18:31.231975" elapsed="3.092576"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:34.326550" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-07T08:18:34.325552" elapsed="4.126682"/>
+</kw>
+<status status="PASS" start="2026-01-07T08:18:31.230712" elapsed="7.222067"/>
+</kw>
+<kw name="Fill the login details and select the user option" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:38.453820" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:38.452779" elapsed="0.228796"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:38.683574" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-01-07T08:18:38.751178" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:38.682573" elapsed="0.207963"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:38.891830" level="INFO">Clicking element '//span[normalize-space()='User']'.</msg>
+<arg>//span[normalize-space()='User']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:38.890536" elapsed="0.140299"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>okayBtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-07T08:18:39.030835" elapsed="0.298544"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:39.330378" level="INFO">Clicking element 'okayBtn'.</msg>
+<arg>okayBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:39.329379" elapsed="0.196503"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:39.526911" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-01-07T08:18:39.526911" elapsed="0.191235"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:39.719408" level="INFO">Selecting checkbox 'id:terms'.</msg>
+<arg>id:terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:39.718146" elapsed="0.223258"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-07T08:18:39.942405" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-07T08:18:39.942405" elapsed="0.218244"/>
+</kw>
+<status status="PASS" start="2026-01-07T08:18:38.452779" elapsed="1.709293"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-07T08:18:40.162072" elapsed="2.187925"/>
+</kw>
+<tag>REGRESSION</tag>
+<status status="PASS" start="2026-01-07T08:18:31.228706" elapsed="11.122781"/>
+</test>
+<doc>Data driven tests with test case parameters + functional tests
+  When we use [Template] NONE, we can have both parameterized and non-parameterized tests in the same suite</doc>
+<status status="PASS" start="2026-01-07T08:18:30.467422" elapsed="11.885076"/>
+</suite>
+<status status="PASS" start="2026-01-07T08:18:30.400008" elapsed="11.955962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">REGRESSION</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

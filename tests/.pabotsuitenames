@@ -1,0 +1,11 @@
+datasources:95419da8850e957450fb17e01ed802ca36bfcbe5
+commandlineoptions:16d9f8c8d570bfd0a9d5d9aed0a00e2fd96c974d
+suitesfrom:no-suites-from-option
+file:0d4441c2624c7c6753300959d15e3107b5c86dce
+--test Test.Invalid Username
+--test Test.Invalid Password
+--test Test.Invalid Both
+--test Test.Validate UnSuccessful Login
+--test Test.Validate cards display in the shopping page
+--test Test.Validate the user login with role selection
+--test Test.Validate the window handling
